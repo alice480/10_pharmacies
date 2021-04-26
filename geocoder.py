@@ -36,7 +36,7 @@ def get_coordinates(addrmss):
     return float(toponym_longitude), float(toponym_latitude)
 
 
-def get_center(address):
+def get_ll_span(address):
     toponym = geocode(address)
     if not toponym:
         return None, None
